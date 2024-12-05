@@ -1,5 +1,5 @@
 # 7-Segment Clock Reborn
-My first attempt at a full implementation of a 7-segment style clock built with individually addressable LEDs and 3D printed housings left more to be desired in terms of the final product. Here is my 2nd attempt at creating my dream wall clock from scratch. 
+My first attempt at a full implementation of a 7-segment style clock built with individually addressable LEDs and 3D printed housings left more to be desired in terms of the final product. Here is my 2nd attempt at creating my dream wall clock from scratch. If you would like to also build this clock youre free to use the code and files I have created for your own personal use. Just note that my code was built using PlatformIO on VSCode so utilize any other IDE's at your own risk. 
 
 ## Design Process
 ### 1. Rough circuit prototypes
