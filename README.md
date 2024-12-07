@@ -17,9 +17,3 @@ My first attempt at a full implementation of a 7-segment style clock built with 
 
 ![Photo of 2nd revision 40% model](https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8395.jpg?raw=true)
 ### 3. Final Construction 
-
-
-<picture>
-  <img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/raw/main/.photos/IMG_8383.jpg?raw=true" alt="Photo of seconds on single 7-seg display" style="max-width: 50%;">
-</picture>
-
