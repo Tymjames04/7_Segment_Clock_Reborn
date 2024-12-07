@@ -24,10 +24,7 @@ void setup () {
     Serial.flush();
     while (1) delay(10);
   }
-
-  if (!rtc.isrunning()) {
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-  }
+  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
 }
 
 void loop () {
