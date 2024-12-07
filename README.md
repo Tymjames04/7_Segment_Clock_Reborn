@@ -8,7 +8,7 @@ My first attempt at a full implementation of a 7-segment style clock built with 
 ![Photo of seconds on single 7-seg display](https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8383.jpg?raw=true | width=80)
 - Updated code to now work on 4 digit 7-segment display as the final product will be similar to that, just larger and illuminated with LEDs.
 
-<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8385.jpg?raw=true" width="100"
+<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8385.jpg?raw=true" width="100">
 ### 2. 3D modeling and printing
 - Created the model and printed a 40% scale model of it to ensure it fit together.
 
