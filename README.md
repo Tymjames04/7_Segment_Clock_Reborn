@@ -5,15 +5,15 @@ My first attempt at a full implementation of a 7-segment style clock built with 
 ### 1. Rough circuit prototypes
 - Utilized PlatformIO and VSCode to program Arduino Uno and DS1307 RTC to drive a single 7-seg display as proof of concept.
 
-![Photo of seconds on single 7-seg display](https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8383.jpg?raw=true | width=80)
+<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8383.jpg?raw=true" width="500">
 - Updated code to now work on 4 digit 7-segment display as the final product will be similar to that, just larger and illuminated with LEDs.
 
-<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8385.jpg?raw=true" width="100">
+<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8385.jpg?raw=true" width="500">
 ### 2. 3D modeling and printing
 - Created the model and printed a 40% scale model of it to ensure it fit together.
 
-![Photo of 1st revision 40% model](https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8391.jpg?raw=true)
+<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8391.jpg?raw=true" width="500">
 - Updated the model and printed revision two at 40% scale once again.
 
-![Photo of 2nd revision 40% model](https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8395.jpg?raw=true)
+<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8395.jpg?raw=true" width="500">
 ### 3. Final Construction 
