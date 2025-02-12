@@ -33,10 +33,10 @@ void loop () {
     if (now.minute() != store){
       store = now.minute();
       segs.clear();
-      segs.updatehour(now.hour()/10, 1);
-      segs.updatehour(now.hour()%10, 0);
-      segs.updatemins(now.minute()/10, 1);
-      segs.updatemins(now.minute()%10, 0);
+      segs.updateHour(now.hour()/10, 1);
+      segs.updateHour(now.hour()%10, 0);
+      segs.updateMinutes(now.minute()/10, 1);
+      segs.updateMinutes(now.minute()%10, 0);
     delay(1000);
     }
 }

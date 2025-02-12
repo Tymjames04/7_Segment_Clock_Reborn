@@ -3,8 +3,8 @@
 
 class SevenSegLEDDriver {
 public:
-    void updatehour(int dig, int place);
-    void updatemins(int dig, int place);
+    void updateHour(int digit, int place);
+    void updateMinutes(int digit, int place);
     void create();
     void clear();
 };
