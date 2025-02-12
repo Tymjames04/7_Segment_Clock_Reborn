@@ -18,6 +18,7 @@ int leds0[24] = {0,1,2,3,4,5,6,7,8,9,10,11,16,17,18,19,20,21,22,23,24,25,26,27};
 void SevenSegLEDDriver::create(){
     FastLED.addLeds<NEOPIXEL, 2>(leds[0], NUM_LEDS_PER_STRIP);
     FastLED.addLeds<NEOPIXEL, 3>(leds[1], NUM_LEDS_PER_STRIP);
+    FastLED.setBrightness(128);
 }
 void SevenSegLEDDriver::clear(){
     FastLED.clear();
@@ -59,7 +60,6 @@ void SevenSegLEDDriver::updateHour(int digit, int power){
     FastLED.show();
 }
 void SevenSegLEDDriver::updateMinutes(int digit, int power){
-    FastLED.clear();
     switch (digit)
     {
     case 1:
@@ -95,7 +95,6 @@ void SevenSegLEDDriver::updateMinutes(int digit, int power){
     }
     FastLED.show();
 }
-
 
 void pushUpdate(int value, int pinside, int power){
     switch (value)
