@@ -1,3 +1,7 @@
+/*
+Holds all implementations of definitions from header file.
+All LED values associated with each integer value are stored in arrays that can be called by pushUpdate.
+*/
 #include <7_seg_led_driver.h>
 #include <FastLED.h>
 #define NUM_STRIPS 2
@@ -23,6 +27,7 @@ void SevenSegLEDDriver::create(){
 void SevenSegLEDDriver::clear(){
     FastLED.clear();
 }
+//Uses switch functions to pass correct values into pushUpdate depending on digit parameter. 
 void SevenSegLEDDriver::updateHour(int digit, int power){
     switch (digit)
     {
@@ -59,6 +64,7 @@ void SevenSegLEDDriver::updateHour(int digit, int power){
     }
     FastLED.show();
 }
+//Uses switch functions to pass correct values into pushUpdate depending on digit parameter. 
 void SevenSegLEDDriver::updateMinutes(int digit, int power){
     switch (digit)
     {
@@ -95,7 +101,10 @@ void SevenSegLEDDriver::updateMinutes(int digit, int power){
     }
     FastLED.show();
 }
-
+// Takes in 3 parameters and then turn on all needed LEDS based on array of needed values. 
+// -Value: Integer of what time needs to be updated onto the LEDS.
+// -Pinside: Determines if hour or minute segments need to be updated. 1 = Hour and 0 = Minute.
+// -Power: updates tens place if power = 1 and ones place segment if place = 0.
 void pushUpdate(int value, int pinside, int power){
     switch (value)
     {
