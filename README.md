@@ -14,10 +14,6 @@ My first attempt at a full implementation of a 7-segment style clock built with 
 ### 2. 3D modeling and printing
 - Created the model and printed a 40% scale model of it to ensure it fit together.
 
-<img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8391.jpg?raw=true" width="500">
-
-- Updated the model and printed revision two at 40% scale once again.
-
 <img src="https://github.com/Chompinz/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8395.jpg?raw=true" width="500">
 
 ### 3. Codeing and Optimization
