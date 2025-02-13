@@ -1,1 +1,0 @@
-lib folder contains all private libraries for project.
