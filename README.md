@@ -19,4 +19,8 @@ My first attempt at a full implementation of a 7-segment style clock built with 
 ### 3. Codeing and Optimization
 - I attempted to use the code that had been used to drive the simple 4 digit display but that proved to be inadequate. A 7_seg_led_library library was created to bridge the gap between main and the fastLED library. More documentation can be found within the code itself as well as the [readme](https://github.com/Tymjames04/7_Segment_Clock_Reborn/blob/main/lib/7_seg_led_driver/7_seg_led_driver.md) for the library.
 
+- When built and uploaded to Arduino UNO the correct ones place digit of the current minute was shown.
+  
+<img src="https://github.com/Tymjames04/7_Segment_Clock_Reborn/blob/main/.photos/IMG_8546.jpg?raw=true" width="500">
+
 ### 4. Final Construction
