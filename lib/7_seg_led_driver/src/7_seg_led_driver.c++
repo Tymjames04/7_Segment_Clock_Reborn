@@ -20,9 +20,9 @@ int leds9[20] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
 int leds0[24] = {0,1,2,3,4,5,6,7,8,9,10,11,16,17,18,19,20,21,22,23,24,25,26,27};
 
 void SevenSegLEDDriver::create(){
-    FastLED.addLeds<NEOPIXEL, 2>(leds[0], NUM_LEDS_PER_STRIP);
-    FastLED.addLeds<NEOPIXEL, 3>(leds[1], NUM_LEDS_PER_STRIP);
-    //FastLED.setBrightness(128);
+    FastLED.addLeds<NEOPIXEL, 4>(leds[0], NUM_LEDS_PER_STRIP);
+    FastLED.addLeds<NEOPIXEL, 2>(leds[1], NUM_LEDS_PER_STRIP);
+    FastLED.setBrightness(128);
 }
 void SevenSegLEDDriver::clear(){
     FastLED.clear();
@@ -109,124 +109,274 @@ void pushUpdate(int value, int pinside, int power){
     switch (value)
     {
     case 1:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
-                leds[pinside][leds1[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
-                leds[pinside][leds1[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 2:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds2)/sizeof(leds2[0])) ; i++){
-                leds[pinside][leds2[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds2)/sizeof(leds2[0])) ; i++){
-                leds[pinside][leds2[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 3:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds3)/sizeof(leds3[0])) ; i++){
-                leds[pinside][leds3[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds3)/sizeof(leds3[0])) ; i++){
-                leds[pinside][leds3[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 4:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds4)/sizeof(leds4[0])) ; i++){
-                leds[pinside][leds4[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds4)/sizeof(leds4[0])) ; i++){
-                leds[pinside][leds4[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 5:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds5)/sizeof(leds5[0])) ; i++){
-                leds[pinside][leds5[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds5)/sizeof(leds5[0])) ; i++){
-                leds[pinside][leds5[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 6:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds6)/sizeof(leds6[0])) ; i++){
-                leds[pinside][leds6[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds6)/sizeof(leds6[0])) ; i++){
-                leds[pinside][leds6[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 7:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds7)/sizeof(leds7[0])) ; i++){
-                leds[pinside][leds7[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds7)/sizeof(leds7[0])) ; i++){
-                leds[pinside][leds7[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        } 
     case 8:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds8)/sizeof(leds8[0])) ; i++){
-                leds[pinside][leds8[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds8)/sizeof(leds8[0])) ; i++){
-                leds[pinside][leds8[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     case 9:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds9)/sizeof(leds9[0])) ; i++){
-                leds[pinside][leds9[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds9)/sizeof(leds9[0])) ; i++){
-                leds[pinside][leds9[i]] = CRGB::Red;
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }  
     case 0:
-        if(power == 1){
-            for(unsigned int i = 0; i < (sizeof(leds0)/sizeof(leds0[0])) ; i++){
-                leds[pinside][leds0[i]+28] = CRGB::Red;
+        if(pinside == 0){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][55-leds1[i]] = CRGB::Red;
+                }
             }
-        }
-        else{
-            for(unsigned int i = 0; i < (sizeof(leds0)/sizeof(leds0[0])) ; i++){
-                leds[pinside][leds0[i]] = CRGB::Red; 
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][27-leds1[i]] = CRGB::Red;
+                }
             }
+            break;
         }
-        break;
+        else if(pinside == 1){
+            if(power == 1){
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]+28] = CRGB::Red;
+                }
+            }
+            else{
+                for(unsigned int i = 0; i < (sizeof(leds1)/sizeof(leds1[0])) ; i++){
+                    leds[pinside][leds1[i]] = CRGB::Red;
+                }
+            }
+            break;
+        }
     }
 }
