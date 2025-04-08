@@ -13,6 +13,7 @@ public:
     void updateMinutes(int digit, int place);
     void create();
     void clear();
+    void updateColors(int red, int green, int blue);
 };
 
 #endif
